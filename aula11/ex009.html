@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronteira</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        body{
+            background-color: rgba(35, 35, 200, 0.715);
+            color: white;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        #txt{
+            border: none;
+            color: black;
+        }
+        #txt:focus{
+            border: none;
+            background-color: rgb(160, 233, 238);
+        }
+        #ver{
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Qual pais você mora ??</h1>
+    <input type="text" name="pais" id="txt"> 
+    <input type="button" value="Verificar" onclick="verificar()" id="ver">
+    <div id="pais"></div>
+
+    <script>
+        function verificar() {
+            let txt = window.document.getElementById('txt')
+            let pais = window.document.getElementById('pais')
+            let vive = txt.value // pegou o valor da variavel txt 
+            pais.innerHTML = `<p> Atualmente você vive no <strong> ${vive} </strong`
+            if(vive == 'brasil'){
+                pais.innerHTML += 'Você é brasileiro(a)'
+            }else{
+                pais.innerHTML += 'Você é estrangeiro(a)'
+            }
+        }
+    </script>
+</body>
+</html>

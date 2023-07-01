@@ -2,8 +2,10 @@
     let msg = window.document.getElementById('msg')
     let img = window.document.getElementById('imagem')
     const data = new Date()
+    const min = new Date()
+    let minutos = min.getMinutes()
     let hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas`
+    msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos`
     if (hora >= 0 && hora < 12 ){
         // bom dia
         img.src = 'imagens/foto-manha.jpg'
@@ -17,6 +19,3 @@
         img.src = 'imagens/foto-noite.jpg'
         document.body.style.backgroundColor = '#141313b1'
     }
-        
-    
-

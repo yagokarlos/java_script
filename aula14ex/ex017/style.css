@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(144, 41, 144);
+    background-color: rgba(13, 148, 125, 0.815);
 }
 
 header{
@@ -20,13 +20,32 @@ section{
     background-color: #ffffff;
     border-radius: 7px;
     padding: 15px;
-    width: 500px;
+    max-width: 70%;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
 }
 
+p  {
+    font-size: 20px;
+}
+
+#txtn{
+    font-size: 15px;
+}
+
+#btn{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+#txtArea{
+    margin: 20px 0px 0px 0px;
+    border: 1px solid black;
+}
+
 footer{
     color: white;
+    margin: 25px 0px 0px 0px;
     text-align: center;
     font-style: italic;
 }

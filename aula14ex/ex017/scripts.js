@@ -1,10 +1,15 @@
-/* function gerarTabuada(){
-    const numeroText = document.querySelector('#txtn')
+function gerarTabuada(){
+    let numeroText = document.querySelector('#txtn')
     let campoTxt = document.querySelector('#txtArea')
-
-    let n1 = Number(campoTxt.value)
-
-    campoTxt.innerHTML = `seu numero é ${n1}`
-
+    if(numeroText.value == 0){
+        window.alert('Digite um número')
+    }else{
+        let n1 = Number(numeroText.value)
+        campoTxt.innerHTML = ""
+        for (let c = 0; c < 11 ; c++ ) {
+            let iten = document.createElement('option')
+            iten.text = `${n1} x ${c} = ${n1*c}`
+            campoTxt.appendChild(iten)
+        }
+    }
 }
-// txtn */

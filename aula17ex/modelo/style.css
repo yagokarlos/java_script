@@ -49,6 +49,10 @@ p  {
     border: 1px solid black;
 }
 
+#txtArea{
+    width: 150px;
+}
+
 
 footer{
     color: white;
